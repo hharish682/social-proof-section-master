@@ -136,7 +136,11 @@ main {
   content: close-quote;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 900px) {
+  .container {
+    padding: 0 5rem;
+  }
+
   main {
     display: flex;
     gap: 5rem;
@@ -147,7 +151,7 @@ main {
   }
   .ratings_container {
     margin-top: 2rem;
-    align-self: flex-end;
+ 
     margin-left: auto;
     transform: translateY(2rem);
   }
