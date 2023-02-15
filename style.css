@@ -25,6 +25,7 @@ body {
 .container {
   text-align: center;
   padding: 0 1.5rem;
+  position: relative;
 }
 
 main {
@@ -161,14 +162,6 @@ main {
     height: 40%;
   }
 
-  .container::after {
-    content: " ";
-    position: absolute;
-    background-image: url(./images/bg-pattern-bottom-desktop.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center right;
-  }
   main {
     display: flex;
     gap: 5rem;
@@ -214,5 +207,16 @@ main {
   }
   .buyer_feedback:nth-child(3) {
     transform: translateY(40px);
+  }
+
+  .container::after {
+    content: " ";
+    position: absolute;
+    background-image: url(./images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 30%;
+    left: 10%;
   }
 }
